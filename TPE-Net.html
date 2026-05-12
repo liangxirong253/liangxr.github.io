@@ -208,25 +208,25 @@
             <a href="https://github.com/liangxirong253/TPE_Net_Simple" target="_blank">💻 Code</a>
         </div>
     </header>
+<!-- 摘要区 -->
+<section class="section">
+    <h2>📖 Abstract</h2>
+    <div class="abstract">
+        <p>Underwater images are crucial for marine applications but often suffer from degradation caused by wavelength-dependent light absorption and scattering. The lack of high-quality paired data remains a key bottleneck, as synthetic data poorly reflect real underwater complexity and real-world datasets often rely on algorithm-generated references with color deviations, artifacts, or detail loss. To address this issue, we propose <strong>TPE-Net</strong>, a terrestrial codebook prior-guided underwater image enhancement framework via compositional supervision. TPE-Net exploits a pretrained terrestrial codebook as a compact and queryable discrete representation space, providing stable natural color and texture priors to compensate for imperfect underwater references. The compositional supervision is formulated as a two-stage scheme centered on contrastive learning. In the first stage, contrastive constraints are imposed within the finite codebook-based representation space to suppress degradation-related features and achieve global enhancement, preventing unconstrained feature separation. In the second stage, a confidence predictor and a distance-based criterion assess regional restoration quality, allowing well-restored regions to guide the refinement of locally degraded areas. Extensive experiments demonstrate that TPE-Net delivers prior-guided enhancement with favorable perceptual quality and task-level benefits across diverse underwater benchmarks.</p>
+        <p><strong>Index Terms</strong> — Underwater image enhancement, Terrestrial codebook prior, Compositional supervision, Contrastive learning.</p>
+    </div>
+</section>
 
-    <!-- 摘要区 -->
-    <section class="section">
-        <h2>📖 Abstract</h2>
-        <div class="abstract">
-            <p>Underwater images are essential for marine applications yet suffer from severe degradation due to selective light absorption and scattering. The scarcity of high‑quality paired training data remains a fundamental bottleneck, as synthetic data fail to capture real‑world complexity, while real‑world datasets rely on algorithm‑generated references with inherent color deviation or detail loss. To address these challenges, we propose <strong>TPE‑Net</strong>, a weakly supervised underwater image enhancement framework guided by a terrestrial codebook prior. Unlike existing methods that directly use terrestrial images as auxiliary supervision, we leverage a pretrained codebook rich in terrestrial color features as a compact, queryable discrete representation, replacing direct supervision from imperfect references with a stable prior. We further design a two‑stage framework that combines global degradation suppression with spatially adaptive local refinement through a carefully designed contrastive constraint strategy. Extensive experiments on multiple underwater benchmarks demonstrate that our method consistently achieves competitive performance in both quantitative metrics and perceptual quality, validating its effectiveness and robustness across diverse degradation scenarios.</p>
-            <p><strong>Index Terms</strong> — Underwater image enhancement, Terrestrial images, VQ‑GAN, contrastive learning.</p>
-        </div>
-    </section>
-
-    <!-- Highlights -->
-    <section class="section">
-        <h2>✨ Highlights</h2>
-        <ul class="highlights-list">
-            <li><strong>1) Terrestrial codebook prior paradigm</strong> — We introduce a new paradigm that leverages a terrestrial‑image‑pretrained codebook as a visual prior, replacing direct pixel‑level supervision from imperfect reference images with a stable, queryable discrete representation to mitigate the adverse impact of reference image quality on model training.</li>
-            <li><strong>2) Two‑stage weakly supervised framework</strong> — We propose a two‑stage framework that synergizes global degradation suppression via contrastive learning with spatially adaptive local refinement guided by a confidence predictor and a distance‑based constraint.</li>
-            <li><strong>3) Superior performance & robustness</strong> — Extensive experiments on multiple underwater benchmarks (UIEB, SUIM‑E, Challenging C60, USOD, EUVP, RUIE etc.) demonstrate that our method consistently delivers superior performance in both quantitative metrics and perceptual quality, underscoring its effectiveness and robustness across diverse degradation scenarios.</li>
-        </ul>
-    </section>
+<!-- Highlights -->
+<section class="section">
+    <h2>✨ Highlights</h2>
+    <ul class="highlights-list">
+        <li><strong>1) Terrestrial-pretrained codebook prior</strong> — A terrestrial-pretrained codebook is introduced for underwater enhancement, providing a finite and queryable discrete prior space.</li>
+        <li><strong>2) Codebook-constrained contrastive learning</strong> — Codebook-constrained contrastive learning suppresses global degradation within a bounded prior representation space.</li>
+        <li><strong>3) Confidence-guided local refinement</strong> — Confidence-guided refinement enables spatially adaptive local correction and improves restoration consistency.</li>
+        <li><strong>4) Perceptual and task-level benefits</strong> — Experiments verify favorable perceptual quality and downstream task benefits across diverse underwater benchmarks.</li>
+    </ul>
+</section>
 
     <!-- Fig. 1 (原论文图2) -->
     <section class="section">
@@ -268,31 +268,31 @@
         </div>
     </section>
 
-    <!-- Citation -->
-    <section class="section">
-        <h2>📄 Citation</h2>
-        <div class="citation">
-            <p>If you find TPE‑Net useful for your research, please consider citing our paper:</p>
-            <pre>
-@article{qi2025tpenet,
-  title     = {Weakly Supervised Underwater Image Enhancement Guided by Terrestrial Codebook Priors with Contrast Constraints},
-  author    = {Qi Qi and Xirong Liang and Weizheng Li and Kunqian Li},
-  journal   = {xxxxx},
+<!-- Citation -->
+<section class="section">
+    <h2>📄 Citation</h2>
+    <div class="citation">
+        <p>If you find TPE-Net useful for your research, please consider citing our paper:</p>
+        <pre>
+@article{qi2026tpenet,
+  title     = {Terrestrial Codebook Prior-Guided Underwater Image Enhancement via Compositional Supervision},
+  author    = {Qi Qi and Xirong Liang and Weizheng Li and Kunqian Li and Xiuyan Liu and Dalei Song},
+  journal   = {Pattern Recognition},
   year      = {2026},
-  url       = {xxxxx},
-  code      = {https://github.com/liangxirong253/TPE_Net_Simple}
+  url       = {https://liangxirong253.github.io/TPE-Net.html},
+  code      = {https://liangxirong253.github.io/TPE-Net.html}
 }
-            </pre>
-        </div>
-    </section>
+        </pre>
+    </div>
+</section>
 
-    <footer>
-        <p>© 2025 TPE‑Net Authors | Qingdao University of Technology & Ocean University of China</p>
-        <div class="contact-line">
-            📧 qiqi@qut.edu.cn / liangxirong@stu.qut.edu.cn / liweizheng@stu.qut.edu.cn &nbsp;|&nbsp; likunqian@ouc.edu.cn
-        </div>
-        <p style="margin-top: 0.3rem;">Implementation based on terrestrial VQ‑GAN prior + weak supervision + contrastive constraints.</p>
-    </footer>
+<footer>
+    <p>© 2026 TPE-Net Authors | Qingdao University of Technology & Ocean University of China</p>
+    <div class="contact-line">
+        📧 qiqi@qut.edu.cn / liangxirong@stu.qut.edu.cn / liweizheng@stu.qut.edu.cn &nbsp;|&nbsp; likunqian@ouc.edu.cn / liuxiuyan@qut.edu.cn / songdalei@ouc.edu.cn
+    </div>
+    <p style="margin-top: 0.3rem;">Implementation based on terrestrial codebook prior + compositional supervision + contrastive learning.</p>
+</footer>
 </div>
 </body>
 </html>
